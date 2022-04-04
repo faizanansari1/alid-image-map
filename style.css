@@ -1,0 +1,180 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: Verdana, sans-serif;
+  margin: 0;
+}
+.mySlides {
+  display: none;
+}
+
+.main-container {
+  height: 960px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 90%;
+  width: 85%;
+  margin: auto;
+  height: 500px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.prev,
+.next {
+  cursor: pointer;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: black;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+}
+
+.mySlides {
+  border-radius: 6px;
+  width: 85%;
+  height: 100%;
+  margin: auto;
+}
+.btn-box {
+  text-align: center;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.btn-box > p {
+  font-size: 18px;
+  color: #fff;
+  padding: 20px;
+  background-color: #000000d9;
+}
+.btn-box > .block {
+  margin: 20px 0;
+}
+.btn-box > .block > label {
+  font-size: 20px;
+  color: #fff;
+}
+.btn-box > .block > input {
+  padding: 12px 18px;
+  font-size: 18px;
+}
+.btn-box > .apply-btn {
+  margin-top: 16px;
+  padding: 12px 18px;
+}
+.btn-box button {
+  padding: 16px 100px;
+  border-radius: 6px;
+  outline: none;
+  border-color: black;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+}
+.form {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+}
+.form_row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+}
+.form_row {
+  font-size: 16px;
+  font-weight: bold;
+}
+.form_row input {
+  width: 85%;
+  padding: 18px;
+  font-size: 16px;
+  outline: none;
+  border-radius: 6px;
+  border-color: black;
+}
+.form_row input[type="radio"] {
+  width: auto;
+  padding: 18px;
+  font-size: 16px;
+  outline: none;
+  border-radius: 6px;
+  border-color: black;
+}
+.radio-section {
+  width: 85%;
+  display: flex;
+}
+.form .submit-btn {
+  padding: 16px 100px;
+  border-radius: 6px;
+  outline: none;
+  border-color: black;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  margin: auto;
+  margin-top: 36px;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev,
+  .next,
+  .text {
+    font-size: 11px;
+  }
+}
